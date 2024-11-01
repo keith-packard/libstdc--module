@@ -1,0 +1,7 @@
+# Copyright © 2024 Amazon.com, Inc. or its affiliates.
+# SPDX-License-Identifier: Apache-2.0
+
+config LIBSTDCXX_MODULE
+	bool "libstdc++ module support"
+	help
+	  This option builds the libstdc++ module.
