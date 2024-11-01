@@ -1,0 +1,19 @@
+# Copyright © 2024 Amazon.com, Inc. or its affiliates.
+# SPDX-License-Identifier: Apache-2.0
+
+config LIBSTDCXX_MODULE_DIR
+	string "libstdc++ URL"
+	default "https://github.com/zephyrproject-rtos/gcc/archive"
+	help
+	  Specify the website path base for the libstdc++ .tar.gz files.
+
+config LIBSTDCXX_MODULE_BASENAME
+	string "libstdc++ basename"
+	default "428d8d7b0542338244ca41ac06a5f3fa4f29bb6d"
+	help
+	  Specify the basename portion of the libstdc++ module URL.
+	  The full URL is constructed by concatenating
+	  LIBSTDCXX_MODULE_DIR, LIBSTDCXX_MODULE_BASE and .tar.gz.
+	  For github URLs, this portion will usually be the git
+	  revision hash value and should match the value used in
+	  sdk-ng for a suitable release.
